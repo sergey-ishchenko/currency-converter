@@ -1,0 +1,37 @@
+<div class="container">
+    <h4>Convert</h4>
+    <div class="input-wrapper">
+        <div class="input-group">
+            <input type="text" class="form-control rate-input" 
+                [(ngModel)]="currencyRateLeft.value"
+                (ngModelChange)="onRateValueChange('left')" 
+                format-currency 
+            />
+            <select name="currency-select-left" class="form-select" 
+                [(ngModel)]="currencyRateLeft.code"
+                (change)="onCurrencyChange()">
+                @for (currency of currenciesList; track currency){
+                    <option [value]="currency">{{currency}}</option>
+                }
+            </select>
+        </div>
+    </div>
+    <span>
+        <=>
+    </span>
+    <div class="input-wrapper">
+        <div class="input-group">
+            <input type="text" class="form-control rate-input" 
+                [(ngModel)]="currencyRateRight.value"
+                (ngModelChange)="onRateValueChange('right')" 
+                >
+            <select name="currency-select-right" class="form-select" 
+                [(ngModel)]="currencyRateRight.code"
+                (change)="onCurrencyChange()">
+                @for (currency of currenciesList; track currency){
+                    <option [value]="currency">{{currency}}</option>
+                }
+            </select>
+        </div>
+    </div>
+</div>

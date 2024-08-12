@@ -1,0 +1,14 @@
+.footer {
+    height: 100px;
+    background: rgb(158, 159, 159);
+    background: linear-gradient(90deg, rgba(158, 159, 159, 1) 0%, rgba(203, 203, 203, 1) 100%);
+
+    .year {
+        font-size: 18px;
+        font-weight: 600;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

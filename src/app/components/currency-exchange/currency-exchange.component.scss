@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid #4892d1;
+    padding: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    width: fit-content;
+    background-color: #fff;
+
+    .input-wrapper {
+        display: inline-block;
+        width: 18em;
+
+        .input-group .rate-input {
+           min-width: 13em
+        }
+    }
+}

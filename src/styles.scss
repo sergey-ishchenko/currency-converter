@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+body{    
+    .wrapper{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../src/assets/bg.png");
+    }
+   .main{
+    flex: 1 1 auto;
+   }
+}

@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="logo" title="Currency rate">
+        <img src="/assets/logo.jpg" alt="Logo">
+    </div>
+    <div class="title">
+        <h3>Currency converter</h3>
+    </div>
+    <div class="rate-block">
+        @for (rate of rates; track rate.code) {
+            <div class="curr-rate">{{ rate.code }}: {{ 1 / rate.value | currency:'': ''}}</div>
+        } @empty {
+            <div>There are no rates.</div>
+        }
+    </div>
+</header>
